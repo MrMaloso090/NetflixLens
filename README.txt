@@ -32,7 +32,7 @@ If you'd like to run the code and explore the implementation:
 
 1. Clone the repository:
    ```bash
-   git clone <URL_OF_THE_REPOSITORY>
+   git clone https://github.com/MrMaloso090/NetflixLens
    cd NetflixLens
    ```
 
