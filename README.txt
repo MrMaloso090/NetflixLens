@@ -1,3 +1,7 @@
+## Main Code
+The main entry point for the project is `NetflixLens.py`, which provides the user interface and handles the main logic.
+
+
 
 # NetflixLens
 
