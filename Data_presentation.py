@@ -382,7 +382,7 @@ def Data_presentation():
                 This analysis highlights the 50 least-viewed titles on Netflix, offering a unique perspective on content that struggles to capture audience attention.
                 These selections provide insights into underperforming trends on the platform.
                 """
-            if TOP50 == '50_Less_Warched_by_Time_Played':
+            if TOP50 == '50_Less_Watched_by_Time_Played':
                 temp_text2.text = """
                 This analysis highlights the 50 least-watched titles on Netflix by hours played, focusing on content with the lowest engagement.
                 These titles reflect minimal viewer commitment and provide valuable context on platform trends.
@@ -447,7 +447,7 @@ def Data_presentation():
                     FROM
                         Worst50
                 ''')
-            if TOP50 == '50_Less_Warched_by_Time_Played':
+            if TOP50 == '50_Less_Watched_by_Time_Played':
                 cur.execute('''
                     SELECT
                         Worst50_Hours.views,
@@ -669,7 +669,7 @@ def Data_presentation():
 
         TOP50s( TYPE , '50_Less_Viewed')
 
-        TOP50s( TYPE , '50_Less_Warched_by_Time_Played')
+        TOP50s( TYPE , '50_Less_Watched_by_Time_Played')
 
 
 
