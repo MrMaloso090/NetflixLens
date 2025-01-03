@@ -1,5 +1,11 @@
 ## Main Code
-The main entry point for the project is `NetflixLens.py`, which provides the user interface and handles the main logic.
+The main entry point for the project is [NetflixLens.py](NetflixLens.py), which provides the user interface and handles the main logic.
+
+## Example Presentation.
+You can view an example of the final output in the presentation located in the folder [__EXAMPLES](__EXAMPLES).
+
+[Example_Presentation_2024-1.pptx](Example_Presentation_2024-1.pptx)
+This presentation showcases the analysis conducted for the first semester of 2024, presenting the processed data in a clear and structured manner.
 
 
 
