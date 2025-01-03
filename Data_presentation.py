@@ -87,16 +87,10 @@ def Data_presentation():
     p1_t2.alignment = PP_ALIGN.CENTER
 
 
-    gm_f = page_1.shapes.add_textbox(Inches(0.5) , Inches(0.1) , Inches(6) , Inches(1))
+    gm_f = page_1.shapes.add_textbox(Inches(0.5) , Inches(0.6) , Inches(6) , Inches(1))
     p1_tf = gm_f.text_frame.paragraphs[0]
 
-    p1_tf.text = '''
-    __________________________________________________
-
-    Code Author: Daniel Sanchez Velasquez - TakuSan.
-    Email: daniel.sanchez.velasquez090@gmail.com
-    __________________________________________________
-    '''
+    p1_tf.text = '''__________________________________________________\n\nCode Author: Daniel Sanchez Velasquez - TakuSan.\nEmail: daniel.sanchez.velasquez090@gmail.com\n__________________________________________________'''
 
     p1_tf.font.name = 'Arial Narrow'
     p1_tf.font.size = Pt(18)
@@ -119,29 +113,7 @@ def Data_presentation():
     gm_p = page_p.shapes.add_textbox(Inches(0.5) , Inches(0.1) , Inches(6) , Inches(1))
     p1_tp = gm_p.text_frame.paragraphs[0]
 
-    p1_tp.text = '''
-    This project offers a comprehensive, automated solution for analyzing Netflix's vast catalog of audiovisual content. Leveraging the Netflix Data Dump, introduced in the 
-    second half of 2023, the program provides a thorough exploration of titles, viewing metrics, and additional metadata. Given the limited data provided by Netflix—title name, 
-    total views, and hours watched—the program seamlessly integrates with the TMDb API to enrich the dataset with genres, production countries, and other essential details. 
-
-    The workflow is fully automated and designed to deliver reliable, well-presented insights. It begins with downloading and storing raw data in JSON format, followed by 
-    normalization and a robust analytical process. This culminates in the creation of an organized and visually engaging PowerPoint presentation, offering a clear and 
-    comprehensive overview of the findings. 
-
-    Key features of this analysis include:  
-    - Identification of the **50 most and least-watched titles**, separated into movies and series.  
-    - Detailed visualizations of genre popularity, including **bar charts for total views** and **pie charts for percentage shares**, presented separately for movies and series.  
-    - Insights into the popularity of production countries, supported by **heatmaps** and bar charts, categorized by type of content.  
-    - Examination of trends in viewing habits relative to content duration, highlighting durations associated with higher or lower viewership.  
-    - Comprehensive exploration of the overall popularity of genres and production countries, incorporating both movies and series into unified visualizations.
-
-    By simply providing the Netflix Data Dump for the desired year—starting from the second half of 2023—the program delivers a polished and up-to-date presentation. The results 
-    are designed to be not only visually appealing but also insightful for understanding trends and patterns within Netflix's vast library.  
-
-    It is important to note that the program's functionality relies on Netflix maintaining its current format for data sharing. If this format changes in the future, adjustments 
-    to the code may be required, particularly in the data selection process. However, as long as the format remains consistent, this tool provides a powerful and fully automated 
-    solution for analyzing Netflix's content library efficiently.
-    '''
+    p1_tp.text = '''This project offers a comprehensive, automated solution for analyzing Netflix's vast catalog of audiovisual content. Leveraging the Netflix Data Dump, introduced in the \nsecond half of 2023, the program provides a thorough exploration of titles, viewing metrics, and additional metadata. Given the limited data provided by Netflix—title name, \ntotal views, and hours watched—the program seamlessly integrates with the TMDb API to enrich the dataset with genres, production countries, and other essential details. \n\nThe workflow is fully automated and designed to deliver reliable, well-presented insights. It begins with downloading and storing raw data in JSON format, followed by \nnormalization and a robust analytical process. This culminates in the creation of an organized and visually engaging PowerPoint presentation, offering a clear and \ncomprehensive overview of the findings. \n\nKey features of this analysis include:  \n- Identification of the **50 most and least-watched titles**, separated into movies and series.  \n- Detailed visualizations of genre popularity, including **bar charts for total views** and **pie charts for percentage shares**, presented separately for movies and series.  \n- Insights into the popularity of production countries, supported by **heatmaps** and bar charts, categorized by type of content.  \n- Examination of trends in viewing habits relative to content duration, highlighting durations associated with higher or lower viewership.  \n- Comprehensive exploration of the overall popularity of genres and production countries, incorporating both movies and series into unified visualizations.\n\nBy simply providing the Netflix Data Dump for the desired year—starting from the second half of 2023—the program delivers a polished and up-to-date presentation. The results \nare designed to be not only visually appealing but also insightful for understanding trends and patterns within Netflix's vast library.  \n\nIt is important to note that the program's functionality relies on Netflix maintaining its current format for data sharing. If this format changes in the future, adjustments \nto the code may be required, particularly in the data selection process. However, as long as the format remains consistent, this tool provides a powerful and fully automated \nsolution for analyzing Netflix's content library efficiently.'''
 
     p1_tp.font.name = 'Arial Narrow'
     p1_tp.font.size = Pt(16)
@@ -363,30 +335,18 @@ def Data_presentation():
 
 
 
-            temp_gm2 = temp_page.shapes.add_textbox(Inches(5) , Inches(5) , Inches(6) , Inches(1))
+            temp_gm2 = temp_page.shapes.add_textbox(Inches(5) , Inches(5.5) , Inches(6) , Inches(1))
             temp_text2 = temp_gm2.text_frame.paragraphs[0]
 
 
             if TOP50 == '50_Most_Viewed':
-                temp_text2.text = """
-                This analysis highlights the 50 most-viewed titles on Netflix, offering insights into the platform's top-performing content.
-                These selections reflect audience preferences and showcase the titles that have captivated viewers worldwide.
-                """
+                temp_text2.text = """This analysis highlights the 50 most-viewed titles on Netflix, offering insights into the platform's top-performing content.\nThese selections reflect audience preferences and showcase the titles that have captivated viewers worldwide."""
             if TOP50 == '50_Most_Watched_by_Time_Played':
-                temp_text2.text = """
-                This analysis highlights the 50 most-watched titles on Netflix by hours played, showcasing the content that keeps audiences engaged the longest.
-                These titles reveal trends in viewer commitment and platform engagement.
-                """
+                temp_text2.text = """This analysis highlights the 50 most-watched titles on Netflix by hours played, showcasing the content that keeps audiences engaged the longest.\nThese titles reveal trends in viewer commitment and platform engagement."""
             if TOP50 == '50_Less_Viewed':
-                temp_text2.text = """
-                This analysis highlights the 50 least-viewed titles on Netflix, offering a unique perspective on content that struggles to capture audience attention.
-                These selections provide insights into underperforming trends on the platform.
-                """
+                temp_text2.text = """This analysis highlights the 50 least-viewed titles on Netflix, offering a unique perspective on content that struggles to capture audience attention.\nThese selections provide insights into underperforming trends on the platform."""
             if TOP50 == '50_Less_Watched_by_Time_Played':
-                temp_text2.text = """
-                This analysis highlights the 50 least-watched titles on Netflix by hours played, focusing on content with the lowest engagement.
-                These titles reflect minimal viewer commitment and provide valuable context on platform trends.
-                """
+                temp_text2.text = """This analysis highlights the 50 least-watched titles on Netflix by hours played, focusing on content with the lowest engagement.\nThese titles reflect minimal viewer commitment and provide valuable context on platform trends."""
 
 
             temp_text2.font.name = 'Calibri'
@@ -608,7 +568,7 @@ def Data_presentation():
                 loop_gm = temp_page.shapes.add_textbox(txt_left , txt_top , txt_width , txt_height)
                 loop_text = loop_gm.text_frame.paragraphs[0]
 
-                loop_text.text = '\nViews: ' + str(vi) + '\nTitle: ' + str(ti) + '\nRuntime: ' + str(ru) + '\nVotes: ' + str(vo) + '\nReproducted Hours :' + str(ho) + '\nCountrie: ' + str(co) + '\nGenres: ' + str(ge)
+                loop_text.text = f'''Views: {vi}\nTitle: {ti}\nRuntime: {ru}\nVotes: {vo}\nReproduced Hours: {ho}\nCountry: {co}\nGenres: {ge}'''
 
                 loop_text.font.name = 'Calibri'
                 loop_text.font.size = Pt(8)
@@ -709,14 +669,10 @@ def Data_presentation():
 
 
         TEXT += 1
-        temp_gm = temp_page.shapes.add_textbox(Inches(5) , Inches(5) , Inches(6) , Inches(1))
+        temp_gm = temp_page.shapes.add_textbox(Inches(5) , Inches(5.5) , Inches(6) , Inches(1))
         temp_text = temp_gm.text_frame.paragraphs[0]
 
-        temp_text.text = '''
-    This analysis explores the popularity of genres across Netflix's entire catalog, using comprehensive viewership data.
-    A bar chart highlights the total number of views for each genre, providing a clear comparison of audience preferences.
-    Additionally, a pie chart presents the percentage share of views, offering a visual breakdown of each genre's popularity relative to the platform as a whole.
-        '''
+        temp_text.text = '''This analysis explores the popularity of genres across Netflix's entire catalog, using comprehensive viewership data.\nA bar chart highlights the total number of views for each genre, providing a clear comparison of audience preferences.\nAdditionally, a pie chart presents the percentage share of views, offering a visual breakdown of each genre's popularity relative to the platform as a whole.'''
         temp_text.font.name = 'Calibri'
         temp_text.font.size = Pt(18)
         temp_text.font.color.rgb = RGBColor(211, 211, 211)
@@ -773,13 +729,7 @@ def Data_presentation():
         temp_gm = temp_page.shapes.add_textbox(Inches(0) , Inches(0) , Inches(6) , Inches(1))
         temp_text = temp_gm.text_frame.paragraphs[0]
 
-        temp_text.text = f'''
-        This bar chart shows the popularity of genres based on their total views. 
-        There is a small error margin due to titles with missing genre data.
-        (This margin varies depending on the analyzed Data Dump.)
-        Titles With No Genres: {null_titles_genres}
-        Error Margin: {error_margin_genres}
-        '''
+        temp_text.text = f'''This bar chart shows the popularity of genres based on their total views. \nThere is a small error margin due to titles with missing genre data.\n(This margin varies depending on the analyzed Data Dump.)\nTitles With No Genres: {null_titles_genres}\nError Margin: {error_margin_genres}'''
 
         temp_text.font.name = 'times New Roman'
         temp_text.font.size = Pt(14)
@@ -885,14 +835,7 @@ def Data_presentation():
         temp_gm = temp_page.shapes.add_textbox(Inches(0) , Inches(0) , Inches(6) , Inches(1))
         temp_text = temp_gm.text_frame.paragraphs[0]
 
-        temp_text.text = f'''
-        This pie charts shows the popularity of genres based on their total views. 
-        There is a full one, and to half of the same information cut in two. 
-        There is a small error margin due to titles with missing genre data.
-        (This margin varies depending on the analyzed Data Dump.)
-        Titles With No Genres: {null_titles_genres}
-        Error Margin: {error_margin_genres}
-        '''
+        temp_text.text = f'''This pie charts shows the popularity of genres based on their total views. \nThere is a full one, and to half of the same information cut in two. \nThere is a small error margin due to titles with missing genre data.\n(This margin varies depending on the analyzed Data Dump.)\nTitles With No Genres: {null_titles_genres}\nError Margin: {error_margin_genres}'''
 
         temp_text.font.name = 'times New Roman'
         temp_text.font.size = Pt(14)
@@ -958,14 +901,10 @@ def Data_presentation():
 
 
         TEXT += 1
-        temp_gm = temp_page.shapes.add_textbox(Inches(5) , Inches(5) , Inches(6) , Inches(1))
+        temp_gm = temp_page.shapes.add_textbox(Inches(5) , Inches(5.5) , Inches(6) , Inches(1))
         temp_text = temp_gm.text_frame.paragraphs[0]
 
-        temp_text.text = '''
-    This analysis examines the popularity of producer countries in Netflix content, highlighting how productions from different 
-    countries impact the platform's global audience. Viewing trends and the impact of producer countries on user preferences 
-    will be analyzed.
-        '''
+        temp_text.text = '''This analysis examines the popularity of producer countries in Netflix content, highlighting how productions from different \ncountries impact the platform's global audience. Viewing trends and the impact of producer countries on user preferences \nnwill be analyzed.'''
         temp_text.font.name = 'Calibri'
         temp_text.font.size = Pt(18)
         temp_text.font.color.rgb = RGBColor(211, 211, 211)
@@ -1029,14 +968,7 @@ def Data_presentation():
             temp_gm = temp_page.shapes.add_textbox(Inches(0) , Inches(0) , Inches(6) , Inches(1))
             temp_text = temp_gm.text_frame.paragraphs[0]
 
-            temp_text.text = f'''
-        This bar and pie charts shows the popularity of the Producing Countries based on their total views.
-        Keep in mind that the largest chart on one page is smaller than the last one on the previous page.
-        There is a small error margin due to titles with missing countries data.
-        (This margin varies depending on the analyzed Data Dump.)
-        Titles With No Genres: {null_titles_countries}
-        Error Margin: {error_margin_countries}
-            '''
+            temp_text.text = f'''This bar and pie charts shows the popularity of the Producing Countries based on their total views.\nKeep in mind that the largest chart on one page is smaller than the last one on the previous page.\nThere is a small error margin due to titles with missing countries data.\n(This margin varies depending on the analyzed Data Dump.)\nTitles With No Genres: {null_titles_countries}\nError Margin: {error_margin_countries}'''
 
             temp_text.font.name = 'times New Roman'
             temp_text.font.size = Pt(14)
@@ -1154,14 +1086,10 @@ def Data_presentation():
 
 
         TEXT += 1
-        temp_gm = temp_page.shapes.add_textbox(Inches(5) , Inches(6) , Inches(6) , Inches(1))
+        temp_gm = temp_page.shapes.add_textbox(Inches(5) , Inches(6.5) , Inches(6) , Inches(1))
         temp_text = temp_gm.text_frame.paragraphs[0]
 
-        temp_text.text = '''
-    This analysis examines the relationship between content duration and its popularity on Netflix. Averages of playback times 
-    will be calculated, and the number of views within each interval will be evaluated. The results will be presented in bar and 
-    scatter plots to illustrate these trends.
-        '''
+        temp_text.text = '''This analysis examines the relationship between content duration and its popularity on Netflix. Averages of playback times \nwill be calculated, and the number of views within each interval will be evaluated. The results will be presented in bar and \nscatter plots to illustrate these trends.'''
         temp_text.font.name = 'Calibri'
         temp_text.font.size = Pt(18)
         temp_text.font.color.rgb = RGBColor(211, 211, 211)
@@ -1203,12 +1131,7 @@ def Data_presentation():
         temp_gm = temp_page.shapes.add_textbox(Inches(0) , Inches(0) , Inches(6) , Inches(1))
         temp_text = temp_gm.text_frame.paragraphs[0]
 
-        temp_text.text = f'''
-    This line chart shows how popularity varies according to content 
-    duration, identifying trends as playback times change. It 
-    provides a clear view of the relationship between duration 
-    and the number of views over time.
-        '''
+        temp_text.text = f'''This line chart shows how popularity varies according to content \nduration, identifying trends as playback times change. It \nprovides a clear view of the relationship between duration \nand the number of views over time.'''
 
         temp_text.font.name = 'times New Roman'
         temp_text.font.size = Pt(14)
@@ -1244,12 +1167,7 @@ def Data_presentation():
         temp_gm = temp_page.shapes.add_textbox(Inches(0) , Inches(0) , Inches(6) , Inches(1))
         temp_text = temp_gm.text_frame.paragraphs[0]
 
-        temp_text.text = f'''
-    This scatter plot expands the analysis by showing the relationship between 
-    popularity and content duration, but with more reference points. By 
-    including more averages, it provides a more detailed and precise 
-    view of viewing trends across different time intervals.
-        '''
+        temp_text.text = f'''This scatter plot expands the analysis by showing the relationship between \npopularity and content duration, but with more reference points. By \nincluding more averages, it provides a more detailed and precise \nview of viewing trends across different time intervals.'''
 
         temp_text.font.name = 'times New Roman'
         temp_text.font.size = Pt(14)
@@ -1279,12 +1197,7 @@ def Data_presentation():
         temp_gm = temp_page.shapes.add_textbox(Inches(0) , Inches(0) , Inches(6) , Inches(1))
         temp_text = temp_gm.text_frame.paragraphs[0]
 
-        temp_text.text = f'''
-    The legend below details the different duration averages analyzed in the scatter plot, 
-    associating each point with a specific time interval to facilitate the interpretation 
-    of trends. The number of views for each average corresponds to the accumulated views 
-    between the previous time in the list and the represented average. - - Time is shownby Hours/Minutes - -
-        '''
+        temp_text.text = f'''The legend below details the different duration averages analyzed in the scatter plot, \nassociating each point with a specific time interval to facilitate the interpretation \nof trends. The number of views for each average corresponds to the accumulated views \nbetween the previous time in the list and the represented average. - - Time is shownby Hours/Minutes - -'''
 
         temp_text.font.name = 'times New Roman'
         temp_text.font.size = Pt(14)
@@ -1328,12 +1241,7 @@ def Data_presentation():
         temp_gm = temp_page.shapes.add_textbox(Inches(10) , Inches(0) , Inches(6) , Inches(1))
         temp_text = temp_gm.text_frame.paragraphs[0]
 
-        temp_text.text = f'''
-    The last average in the list was not included in the charts because it represents 
-    extremely long durations with very few views. Its inclusion would distort the 
-    tables and make them difficult to read clearly
-    -> {last_runtime}
-        '''
+        temp_text.text = f'''The last average in the list was not included in the charts because it represents \nextremely long durations with very few views. Its inclusion would distort the \ntables and make them difficult to read clearly\n-> {last_runtime}'''
 
         temp_text.font.name = 'times New Roman'
         temp_text.font.size = Pt(14)
@@ -1406,15 +1314,10 @@ def Data_presentation():
 
 
     TEXT += 1
-    temp_gm = temp_page.shapes.add_textbox(Inches(5) , Inches(5) , Inches(6) , Inches(1))
+    temp_gm = temp_page.shapes.add_textbox(Inches(5) , Inches(5.5) , Inches(6) , Inches(1))
     temp_text = temp_gm.text_frame.paragraphs[0]
 
-    temp_text.text = '''
-    From this point onward, the information presented and the analyses conducted 
-    will be based on data from both movies and series, aiming to conclude with a global 
-    analysis that offers us broader insight. This analysis will allow us to explore 
-    the overall behavior of the content on the platform in terms of popularity.
-    '''
+    temp_text.text = '''From this point onward, the information presented and the analyses conducted \nwill be based on data from both movies and series, aiming to conclude with a global \nanalysis that offers us broader insight. This analysis will allow us to explore \nthe overall behavior of the content on the platform in terms of popularity.'''
     temp_text.font.name = 'Calibri'
     temp_text.font.size = Pt(24)
     temp_text.font.color.rgb = RGBColor(211, 211, 211)
@@ -1462,14 +1365,10 @@ def Data_presentation():
 
 
     TEXT += 1
-    temp_gm = temp_page.shapes.add_textbox(Inches(5) , Inches(5) , Inches(6) , Inches(1))
+    temp_gm = temp_page.shapes.add_textbox(Inches(5) , Inches(5.5) , Inches(6) , Inches(1))
     temp_text = temp_gm.text_frame.paragraphs[0]
 
-    temp_text.text = '''
-    This analysis explores the popularity of genres across Netflix's entire catalog, using comprehensive viewership data.
-    A bar chart highlights the total number of views for each genre, providing a clear comparison of audience preferences.
-    Additionally, a pie chart presents the percentage share of views, offering a visual breakdown of each genre's popularity relative to the platform as a whole.
-    '''
+    temp_text.text = '''This analysis explores the popularity of genres across Netflix's entire catalog, using comprehensive viewership data.\nA bar chart highlights the total number of views for each genre, providing a clear comparison of audience preferences.\nAdditionally, a pie chart presents the percentage share of views, offering a visual breakdown of each genre's popularity relative to the platform as a whole.'''
     temp_text.font.name = 'Calibri'
     temp_text.font.size = Pt(18)
     temp_text.font.color.rgb = RGBColor(211, 211, 211)
@@ -1522,13 +1421,7 @@ def Data_presentation():
     temp_gm = temp_page.shapes.add_textbox(Inches(0) , Inches(0) , Inches(6) , Inches(1))
     temp_text = temp_gm.text_frame.paragraphs[0]
 
-    temp_text.text = f'''
-    This bar chart shows the popularity of genres based on their total views. 
-    There is a small error margin due to titles with missing genre data.
-    (This margin varies depending on the analyzed Data Dump.)
-    Titles With No Genres: {null_titles_genres}
-    Error Margin: {error_margin_genres}
-    '''
+    temp_text.text = f'''This bar chart shows the popularity of genres based on their total views. \nnThere is a small error margin due to titles with missing genre data.\n(This margin varies depending on the analyzed Data Dump.)\nTitles With No Genres: {null_titles_genres}\nError Margin: {error_margin_genres}'''
 
     temp_text.font.name = 'times New Roman'
     temp_text.font.size = Pt(14)
@@ -1596,14 +1489,7 @@ def Data_presentation():
     temp_gm = temp_page.shapes.add_textbox(Inches(0) , Inches(0) , Inches(6) , Inches(1))
     temp_text = temp_gm.text_frame.paragraphs[0]
 
-    temp_text.text = f'''
-    This pie charts shows the popularity of genres based on their total views. 
-    There is a full one, and to half of the same information cut in two. 
-    There is a small error margin due to titles with missing genre data.
-    (This margin varies depending on the analyzed Data Dump.)
-    Titles With No Genres: {null_titles_genres}
-    Error Margin: {error_margin_genres}
-    '''
+    temp_text.text = f'''This pie charts shows the popularity of genres based on their total views. \nThere is a full one, and to half of the same information cut in two. \nThere is a small error margin due to titles with missing genre data.\n(This margin varies depending on the analyzed Data Dump.)\nTitles With No Genres: {null_titles_genres}\nError Margin: {error_margin_genres}'''
 
     temp_text.font.name = 'times New Roman'
     temp_text.font.size = Pt(14)
@@ -1665,14 +1551,10 @@ def Data_presentation():
 
 
     TEXT += 1
-    temp_gm = temp_page.shapes.add_textbox(Inches(5) , Inches(5) , Inches(6) , Inches(1))
+    temp_gm = temp_page.shapes.add_textbox(Inches(5) , Inches(5.5) , Inches(6) , Inches(1))
     temp_text = temp_gm.text_frame.paragraphs[0]
 
-    temp_text.text = '''
-    This analysis examines the popularity of producer countries in Netflix content, highlighting how productions from different 
-    countries impact the platform's global audience. Viewing trends and the impact of producer countries on user preferences 
-    will be analyzed.
-    '''
+    temp_text.text = '''This analysis examines the popularity of producer countries in Netflix content, highlighting how productions from different \ncountries impact the platform's global audience. Viewing trends and the impact of producer countries on user preferences \nwill be analyzed.'''
     temp_text.font.name = 'Calibri'
     temp_text.font.size = Pt(18)
     temp_text.font.color.rgb = RGBColor(211, 211, 211)
@@ -1707,13 +1589,7 @@ def Data_presentation():
     temp_gm = temp_page.shapes.add_textbox(Inches(0) , Inches(0) , Inches(6) , Inches(1))
     temp_text = temp_gm.text_frame.paragraphs[0]
 
-    temp_text.text = f'''
-    This heatmap shows the popularity of the Producing Countries based on their total views.
-    There is a small error margin due to titles with missing countries data.
-    (This margin varies depending on the analyzed Data Dump.)
-    Titles With No Genres: {null_titles_countries}
-    Error Margin: {error_margin_countries}
-    '''
+    temp_text.text = f'''This heatmap shows the popularity of the Producing Countries based on their total views.\nThere is a small error margin due to titles with missing countries data.\n(This margin varies depending on the analyzed Data Dump.)\nTitles With No Genres: {null_titles_countries}\nError Margin: {error_margin_countries}'''
 
     temp_text.font.name = 'times New Roman'
     temp_text.font.size = Pt(14)
@@ -1745,19 +1621,27 @@ def Data_presentation():
     temp_gm = temp_page.shapes.add_textbox(Inches(0) , Inches(0) , Inches(6) , Inches(1))
     temp_text = temp_gm.text_frame.paragraphs[0]
 
-    temp_text.text = f'''
-    This heatmap shows the popularity of the Producing Countries based on their total views.     IMPORTANT: In this second heatmap, we can better appreciate
-    There is a small error margin due to titles with missing countries data.                                                             the popularity of lower-ranked countries
-    (This margin varies depending on the analyzed Data Dump.)                                                                            by excluding the top 10 countries.
-    Titles With No Genres: {null_titles_countries}
-    Error Margin: {error_margin_countries}
-    '''
+    temp_text.text = f'''This heatmap shows the popularity of the Producing Countries based on their total views.\nThere is a small error margin due to titles with missing countries data.\n(This margin varies depending on the analyzed Data Dump.)\nTitles With No Genres: {null_titles_countries}\nError Margin: {error_margin_countries}'''
 
     temp_text.font.name = 'times New Roman'
     temp_text.font.size = Pt(14)
     temp_text.font.color.rgb = RGBColor(211, 211, 211)
     temp_text.alignment = PP_ALIGN.LEFT
     temp_gm.text_frame.auto_size = True
+
+
+    TEXT += 1
+    temp_gm = temp_page.shapes.add_textbox(Inches(0) , Inches(0) , Inches(14) , Inches(1))
+    temp_text = temp_gm.text_frame.paragraphs[0]
+
+    temp_text.text = f'''IMPORTANT: In this second heatmap, we can better appreciate\nthe popularity of lower-ranked countries\nby excluding the top 10 countries.'''
+
+    temp_text.font.name = 'times New Roman'
+    temp_text.font.size = Pt(18)
+    temp_text.font.color.rgb = RGBColor(211, 211, 211)
+    temp_text.alignment = PP_ALIGN.RIGHT
+    temp_gm.text_frame.auto_size = True
+
 
 
 
@@ -1798,14 +1682,7 @@ def Data_presentation():
         temp_gm = temp_page.shapes.add_textbox(Inches(0) , Inches(0) , Inches(6) , Inches(1))
         temp_text = temp_gm.text_frame.paragraphs[0]
 
-        temp_text.text = f'''
-    This bar and pie charts shows the popularity of the Producing Countries based on their total views.
-    Keep in mind that the largest chart on one page is smaller than the last one on the previous page.
-    There is a small error margin due to titles with missing countries data.
-    (This margin varies depending on the analyzed Data Dump.)
-    Titles With No Genres: {null_titles_countries}
-    Error Margin: {error_margin_countries}
-        '''
+        temp_text.text = f'''This bar and pie charts shows the popularity of the Producing Countries based on their total views.\nKeep in mind that the largest chart on one page is smaller than the last one on the previous page.\nThere is a small error margin due to titles with missing countries data.\n(This margin varies depending on the analyzed Data Dump.)\nTitles With No Genres: {null_titles_countries}\nError Margin: {error_margin_countries}'''
 
         temp_text.font.name = 'times New Roman'
         temp_text.font.size = Pt(14)
@@ -1874,15 +1751,12 @@ def Data_presentation():
 
 
 
-    temp_gm2 = temp_page.shapes.add_textbox(Inches(5) , Inches(5) , Inches(6) , Inches(1))
+    temp_gm2 = temp_page.shapes.add_textbox(Inches(5) , Inches(5.5) , Inches(6) , Inches(1))
     temp_text2 = temp_gm2.text_frame.paragraphs[0]
 
 
 
-    temp_text2.text = """
-    This analysis highlights the 50 most-viewed titles on Netflix, offering insights into the platform's top-performing content.
-    These selections reflect audience preferences and showcase the titles that have captivated viewers worldwide.
-    """
+    temp_text2.text = """This analysis highlights the 50 most-viewed titles on Netflix, offering insights into the platform's top-performing content.\nThese selections reflect audience preferences and showcase the titles that have captivated viewers worldwide."""
 
     temp_text2.font.name = 'Calibri'
     temp_text2.font.size = Pt(18)
@@ -2061,7 +1935,8 @@ def Data_presentation():
         loop_gm = temp_page.shapes.add_textbox(txt_left , txt_top , txt_width , txt_height)
         loop_text = loop_gm.text_frame.paragraphs[0]
 
-        loop_text.text = '\nViews: ' + str(vi) + '\nTitle: ' + str(ti) + '\nRuntime: ' + str(ru) + '\nVotes: ' + str(vo) + '\nReproducted Hours :' + str(ho) + '\nCountrie: ' + str(co) + '\nGenres: ' + str(ge) + '\n' + str(fo)
+        loop_text.text = f'''Views: {vi}\nTitle: {ti}\nRuntime: {ru}\nVotes: {vo}\nReproduced Hours: {ho}\nCountry: {co}\nGenres: {ge}\n{fo}'''
+
 
         loop_text.font.name = 'Calibri'
         loop_text.font.size = Pt(8)
@@ -2161,44 +2036,10 @@ def Data_presentation():
 
 
 
-    temp_gm = page_4.shapes.add_textbox(Inches(0) , Inches(0.6) , Inches(6) , Inches(1))
+    temp_gm = page_4.shapes.add_textbox(Inches(0.5) , Inches(0.6) , Inches(6) , Inches(1))
     temp_text = temp_gm.text_frame.paragraphs[0]
 
-    temp_text.text = f'''
-    Analysis 
-    of Tv/Series.
-    Total Views: {views_tv}   Total Time Played: {hours_tv}   Average Votes: {votes_tv}
-
-    Top50 Most Viewed.-----------------------------------------Page: {index_list[0]}
-    Top50 Most Watched by Time Played.-------------------------Page: {index_list[1]}
-    Top50 Less Viewed.-----------------------------------------Page: {index_list[2]}
-    Top50 Less Watched by Time Played.-------------------------Page: {index_list[3]}
-    Genres Popularity.-----------------------------------------Page: {index_list[4]}
-    Producing Countries Popularity.----------------------------Page: {index_list[5]}
-    Relationship Between Duration and Playback Populariry.-----Page: {index_list[6]}
-
-
-    Analysis 
-    of Movies.
-    Total Views: {views_movie}   Total Time Played: {hours_movie}   Average Votes: {votes_movie}
-
-    Top50 Most Viewed.-----------------------------------------Page: {index_list[7]}
-    Top50 Most Watched by Time Played.-------------------------Page: {index_list[8]}
-    Top50 Less Viewed.-----------------------------------------Page: {index_list[9]}
-    Top50 Less Watched by Time Played.-------------------------Page: {index_list[10]}
-    Genres Popularity.-----------------------------------------Page: {index_list[11]}
-    Producing Countries Popularity.----------------------------Page: {index_list[12]}
-    Relationship Between Duration and Playback Populariry.-----Page: {index_list[13]}
-
-
-    Analysis
-    of Global content.
-
-    Analysis of Global Content.--------------------------------Page: {index_list[14]}
-    Genres Popularity.-----------------------------------------Page: {index_list[15]}
-    Producing Countries Popularity.----------------------------Page: {index_list[16]}
-    Top50 Most Viewed.-----------------------------------------Page: {index_list[17]}
-    '''
+    temp_text.text = f'''Analysis \nof Tv/Series.\nTotal Views: {views_tv}   Total Time Played: {hours_tv}   Average Votes: {votes_tv}\n\nTop50 Most Viewed.-----------------------------------------Page: {index_list[0]}\nTop50 Most Watched by Time Played.-------------------------Page: {index_list[1]}\nTop50 Less Viewed.-----------------------------------------Page: {index_list[2]}\nTop50 Less Watched by Time Played.-------------------------Page: {index_list[3]}\nGenres Popularity.-----------------------------------------Page: {index_list[4]}\nProducing Countries Popularity.----------------------------Page: {index_list[5]}\nRelationship Between Duration and Playback Populariry.-----Page: {index_list[6]}\n\n\nAnalysis \nof Movies.\nTotal Views: {views_movie}   Total Time Played: {hours_movie}   Average Votes: {votes_movie}\n\nTop50 Most Viewed.-----------------------------------------Page: {index_list[7]}\nTop50 Most Watched by Time Played.-------------------------Page: {index_list[8]}\nTop50 Less Viewed.-----------------------------------------Page: {index_list[9]}\nTop50 Less Watched by Time Played.-------------------------Page: {index_list[10]}\nGenres Popularity.-----------------------------------------Page: {index_list[11]}\nProducing Countries Popularity.----------------------------Page: {index_list[12]}\nRelationship Between Duration and Playback Populariry.-----Page: {index_list[13]}\n\n\nAnalysis\nof Global content.\n\nAnalysis of Global Content.--------------------------------Page: {index_list[14]}\nGenres Popularity.-----------------------------------------Page: {index_list[15]}\nProducing Countries Popularity.----------------------------Page: {index_list[16]}\nTop50 Most Viewed.-----------------------------------------Page: {index_list[17]}'''
 
     temp_text.font.name = 'times New Roman'
     temp_text.font.size = Pt(14)
@@ -2214,17 +2055,11 @@ def Data_presentation():
     temp_page.shapes.add_picture(FOLDER_PRESENTATION + 'Pre_8.png' , 0 , 0 , width=diapo_.slide_width , height=diapo_.slide_height)
 
 
-    temp_gm1 = temp_page.shapes.add_textbox(Inches(9) , Inches(5.5) , Inches(6) , Inches(1))
+    temp_gm1 = temp_page.shapes.add_textbox(Inches(9) , Inches(6) , Inches(6) , Inches(1))
     temp_text1 = temp_gm1.text_frame.paragraphs[0]
 
 
-    temp_text1.text = '''
-    __________________________________________________
-
-    Code Author: Daniel Sanchez Velasquez - TakuSan.
-    Email: daniel.sanchez.velasquez090@gmail.com
-    __________________________________________________
-    '''
+    temp_text1.text = '''__________________________________________________\n\nCode Author: Daniel Sanchez Velasquez - TakuSan.\nEmail: daniel.sanchez.velasquez090@gmail.com\n__________________________________________________'''
 
 
     temp_text1.font.name = 'Arial Narrow'
@@ -2267,3 +2102,9 @@ def Data_presentation():
 
     
     return
+
+
+
+
+
+Data_presentation()
