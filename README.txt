@@ -1,15 +1,15 @@
 ## Important Comment
 NetflixLens is my first project as a programmer and data analyst after obtaining my Python certification. Developing this program was a journey of significant personal and professional growth, where I refined my existing skills and learned many new ones.
-If you want to explore the code in detail, I recommend starting with [DATA_analysis.py](./DATA_analysis.py), as I believe it best reflects my abilities as a developer and data analyst.
+If you want to explore the code in detail, I recommend starting with [DATA_analysis.py](https://github.com/MrMaloso090/NetflixLens/blob/main/DATA_analysis.py), as I believe it best reflects my abilities as a developer and data analyst.
 
 
 ## Main Code
 The main entry point for the project is [NetflixLens.py], which provides the user interface and handles the main logic.
 
 ## Example Presentation.
-You can view an example of the final output in the presentation located in the folder [__EXAMPLES](./__EXAMPLES).
+You can view an example of the final output in the presentation located in the folder [__EXAMPLES](https://github.com/MrMaloso090/NetflixLens/blob/main/__EXAMPLES).
 
-[Example_Presentation_2024-1.pptx](./__EXAMPLES/Example_Presentation_2024-1.pptx)
+[Example_Presentation_2024-1.pptx](https://github.com/MrMaloso090/NetflixLens/blob/main/__EXAMPLES/Example_Presentation_2024-1.pptx)
 This presentation showcases the analysis conducted for the first semester of 2024, presenting the processed data in a clear and structured manner.
 
 
