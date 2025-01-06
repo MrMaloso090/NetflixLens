@@ -69,6 +69,26 @@ If you'd like to run the code and explore the implementation:
 - `_data/Map_data/`: Contains essential data for the global heat map.
 - `_data/Presentation/`: Includes images and logos used in the presentation.
 
+### Dependencies
+
+- urllib.request
+- urllib.parse
+- urllib.error
+- sqlite3
+- ssl
+- sys
+- time
+- json
+- os
+- matplotlib.pyplot
+- pandas
+- geopandas
+- fiona
+- pyproj
+- Pillow
+- requests
+- python-pptx
+
 ## License
 
 This project is licensed under the MIT License. You are free to use, modify, and distribute the code, provided proper credit is given to the author. For more details, refer to the `LICENSE` file.
