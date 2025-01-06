@@ -1,7 +1,8 @@
-
-pandas
 matplotlib
+pandas
 geopandas
-python-pptx
-requests
+fiona
+pyproj
 Pillow
+requests
+python-pptx
