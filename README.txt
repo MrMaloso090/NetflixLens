@@ -1,6 +1,4 @@
-## Important Comment
-NetflixLens is my first project as a programmer and data analyst after obtaining my Python certification. Developing this program was a journey of significant personal and professional growth, where I refined my existing skills and learned many new ones.
-If you want to explore the code in detail, I recommend starting with [DATA_analysis.py](https://github.com/MrMaloso090/NetflixLens/blob/main/DATA_analysis.py), as I believe it best reflects my abilities as a developer and data analyst.
+NetflixLens marked the beginning of my journey as a data analyst. It challenged me to apply and expand my skills in data processing, API integration, and automated reporting.
 
 
 ## Main Code
